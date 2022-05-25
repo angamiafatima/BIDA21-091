@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="cinema.css">
+    <title>Feedback</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1004437ad1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <header>
+                <div class="dropdown">
+                    <div class="logo"><a href="index.html"> <img src="images/logo.jpg" alt="logo"></a></div>
+                  </div>
+                  <ul class="menu">
+                    <li><a href="index.html"> Home </a></li>
+                    <div class="dropdown"><button class="dropbtn">Categories</button>
+                    <div class="moviecontent">
+                        <a href="action.html">Action And Adventure</a>
+                        <a href="family.html">Children And Family</a>
+                        <a href="comedy.html">Comedy</a>
+                    </div>
+                    </div>
+                    <div class="dropdown"><button class="dropbtn">Movies</button>
+                    <div class="moviecontent">
+                        <a href="showing.html">Now Showing!</a>
+                        <a href="coming.html">Coming Soon!</a>
+                    </div>
+                    </div>
+                    <li><a href="feedback.html"> Feedback </a></li>
+                    <li><a href="contactus.html"> Contact Us </a></li>
+                </ul>
+                </header>
+                <p class="motto">It's More Than Just A Movie!</p>
+            <br>
+
+        <div class="feed">
+            <h1> So, What did you think? <i class="fa-solid fa-comment"></i></h1>
+            <h2> Share your experiences with us! </h2>
+            <h3>Whether you have something wonderful to say about your big picture adventure or there’s something you think we can do better, we want to know about it.</h3>
+            <h3>Your feedback will help us continue to give you the best experience.</h3> 
+        </div>
+        <div class="form">
+        <form action="submission.html">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" required><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" required><br>
+            <label for="number">Contact Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="712-345-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}"><br>
+            <p>Please enter type</p>
+            <input type="radio" id="complaint" name="type" value="complaint">
+            <label for="complaint">Complaint</label><br>
+            <input type="radio" id="suggestion" name="type" value="suggestion">
+            <label for="suggestion">Suggestion</label><br>
+            <input type="radio" id="compliment" name="type" value="compliment">
+            <label for="compliment">Compliment</label><br>
+            <input type="radio" id="enquiry" name="type" value="enquiry">
+            <label for="enquiry">Enquiry</label><br>
+            <input type="radio" id="others" name="type" value="others">
+            <label for="others">Others</label><br>
+            <textarea name="message" rows="3" cols="30" placeholder="Please enter your message here"></textarea>
+             <input type="Submit"value="submit">
+        </form>
+        <br>
+        <br>
+        </div>
+        <div class="subscribe">
+            <h1>Subscribe to our Newsletter<i class="fa-solid fa-envelope"></i></h1>
+            <p>Be the first to take advantage of our specials and find out of exclusive events!</p>
+            <form action="welcome.html">
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <input type="Submit"value="submit">
+            </form>
+            </div>
+            <footer>
+            <div class="flex-container">
+                <div>
+                    <h3>Get in Touch with us</h3>
+                    <p>Riverwalk <span> +267 370-0111</span></p>
+                    <p>Acacia <span> +267 397-1966</span></p>
+                    <p>Masa <span> +267 311-7753 </span></p>
+                </div>
+                <div>
+                    <h3>The Big Picture</h3>
+                    <p> <a href="aboutus.html">About us </a></p>
+                    <p> <a href="showing.html">What's On</a></p>
+                    <p> <a href="coming.html"> Come back for...</a></p>
+                    <p> <a href="contactus.html">Contact Us</a></p>
+                    <p> <a href="feedback.html">Feedback</a></p>
+                </div>
+            </div>
+            <p> © Copyright 2022. All rights reserved </p>
+            </footer>
+    </body>
+</html>

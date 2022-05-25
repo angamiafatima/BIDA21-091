@@ -1,0 +1,272 @@
+body, .menu a:hover, .moviecontent a:hover{
+    background-color: white;
+}
+header{
+    height: 3em;
+    min-width: 100%;
+}
+/* header content*/
+.logo{
+    position: absolute;
+    padding:10px 5px;
+}  
+.motto{
+    text-align: center;
+    color: lightgray;
+}
+.motto, .menu, .dropbtn, .about{
+    font-size: 100%;
+}
+.menu, .dropbtn, .moviecontent, .dropdown:hover .dropbtn{
+    background-color: darkolivegreen;
+}
+.menu a:hover, .dropdown:hover .dropbtn{
+    background-color: white;
+    color: darkolivegreen;
+}
+.menu{
+        padding: 10px 5px;
+        height: 4em;
+        min-width:100%;
+        list-style:none;
+        margin-top:0.02%;
+    }
+.menu li{
+        display:inline-block;
+        margin:5px 85px;
+}
+.menu li a{
+        text-decoration:none;
+        color:lightgray;
+        padding: 5px 5px;
+        letter-spacing:2px;
+        display: block;
+    }
+.dropbtn{
+    color: lightgray;
+    padding: 10px 50px;
+    border:none;
+}
+/*hover buttons movies and categories*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.moviecontent{
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.moviecontent a{
+    color: lightgray;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+}
+/*down image anchor*/
+.img{
+    margin-left: 45%;
+}
+td:hover, #img table .drop{
+    background-color: whitesmoke;
+    color: black;
+}
+.location, .time, .info{
+    display: none;
+}
+.drop:hover .location, .drop:hover .time, .drop:hover .info, .dropdown:hover .moviecontent{
+    display: block;
+}
+/*newletter*/
+.subscribe{
+    background-color: #ebbac2;
+    width: 50%;
+    border: 15px solid black;
+    margin: 1em 20% 1em 20%;
+    padding: 20px;
+    outline-color: darkslategray;
+    outline-style: dashed;
+    outline-offset: 5px;
+}
+/*footer*/
+.flex-container{
+    display:flex;
+    background-color: rgb(216, 240, 247);
+    width:100%;
+}
+.flex-container> div{
+    background-color: lightblue;
+    margin:5% 5%;
+    padding: 2%;
+    width:80%;
+    border: 15px solid black;
+    outline-color: darkslategray;
+    outline-style: dashed;
+    outline-offset: 5px;
+}
+footer p a{
+    color: black;
+}
+footer p a:hover{
+    color: white;
+}
+span{
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+}
+/* information on current/upcoming movies*/
+.details, .coming{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    background-color: darkseagreen;
+    justify-content: center;;
+    align-content: center;
+    border: 2px solid black;
+}
+.showing{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+.showing, .form, .contact, .about{
+    background-color: darkseagreen;
+}
+.gray{
+    background-color: seagreen;
+    color: black;
+    padding-left: 10px;
+}
+/*contact us and about us page*/
+.contact, .about{
+    padding-left: 8em;
+    font-size: 150%;
+}
+/*feedback form*/
+.form{
+    padding-left: 5em;
+}
+/*opening times*/
+.open{
+    background-color: whitesmoke;
+    border: 2px solid;
+    padding: 0% 8%;
+    resize:both;
+    overflow: auto;
+    float: right;
+}
+.picture{
+    text-align: center;
+    font-size: xx-large;
+    color: seagreen;
+    text-shadow: 8px;
+}
+.about{
+    padding:2px;
+    box-sizing: border-box;
+}
+/*list of movies currently playing-home page*/
+.table{
+    display: flex;
+    background-color: darkseagreen;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+}
+@media (max-width:1179px){
+    header{
+        height:100%;
+        width:fit-content;
+    }
+    .logo{
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .showing{
+        display: flex;
+        flex-direction: column;
+    }
+    .motto{
+        color: darkolivegreen;
+    }
+    .menu{
+    position:relative;
+    height: auto;
+    background-color: darkolivegreen;
+    top: 5%;
+    left:0px;
+    text-align: center;
+    }
+    .menu li{
+    display:block;
+    }
+    .menu li a{
+    text-decoration:none;
+    color:lightgray;
+    letter-spacing:2px;
+    } 
+    .dropbtn{
+    color: lightgray;
+    padding: 10px 50px;
+    border:none;
+    }
+    .dropdown{
+    display:block;
+    }
+    .moviecontent{
+    display: none;
+    position: absolute;
+    min-width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    .moviecontent a{
+    color: lightgray;
+    padding: 10px 16px;
+    text-decoration: none;
+    display:block;
+    }
+    .dropdown:hover .moviecontent{
+    display: block;
+    }
+    .menu a:hover, .moviecontent a:hover{
+    background-color: white;
+    }
+    .flex-container{
+    flex-direction: column;
+    width: 100%;
+    }
+    .menu, .dropbtn{
+    font-size: 100%;
+    }
+    .menu, .dropbtn, .moviecontent, .dropdown:hover .dropbtn{
+    background-color: darkolivegreen;
+    }
+    .menu a:hover, .dropdown:hover .dropbtn{
+    background-color: white;
+    color: darkolivegreen;
+    }
+    video{
+    width: 100%;
+    height: 50%;
+    }
+    #img{
+    padding-left: 2%;
+    }
+    #table{
+    display: block;
+    width: 100%;
+    }
+    .open{
+    width: 80%;
+    }
+    .contact{
+    width: 100%;
+    padding-left: 2%;
+    }
+}
